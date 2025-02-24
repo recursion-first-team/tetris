@@ -1,9 +1,9 @@
 :root {
-  --bg: #fdfcff;
-  --primary: #0061a6;
+  --bg: #1b1b1b;
+  --primary: #ffffff;
   --on-primary: #ffffff;
   --primary-container: #d0e4ff;
-  --seconddary-container: #d6e3f7;
+  --seconddary-container: #ffffff;
 }
 
 body {
@@ -55,12 +55,13 @@ body {
 
 .score {
   font-size: 20px;
+  color: var(--primary);
 }
 
 .primary-button {
   padding: 10px 20px;
   color: var(--on-primary);
-  background-color: var(--primary);
+  background-color: var(--bg);
   border: 0;
   border-radius: 100px;
   cursor: pointer;
