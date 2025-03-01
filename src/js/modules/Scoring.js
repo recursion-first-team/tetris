@@ -1,7 +1,7 @@
 class Scoring {
   //コンストラクター
   constructor() {
-    let score = 0; //初期化時はスコアは0にする
+    this.score = 0; //初期化時はスコアは0にする
   }
 
   //セッター
@@ -13,3 +13,5 @@ class Scoring {
     return this.score;
   }
 }
+
+export default Score;
