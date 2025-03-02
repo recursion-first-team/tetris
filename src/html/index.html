@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tetris</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body backgroud="./assets/tetris.png">
+    <div class="container">
+      <div class="playfield-wrapper">
+        <canvas id="playfield" class="playfield"></canvas>
+      </div>
+      <div class="panel">
+        <div class="score-board">
+          <h2 class="score-title">Score</h2>
+          <p id="score" class="score">0</p>
+        </div>
+        <div class="start-button">
+          <button
+            id="start-button"
+            class="primary-button"
+            onclick="startGame()"
+          >
+            開始
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

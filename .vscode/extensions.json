@@ -1,0 +1,7 @@
+{
+  // prettier-ignore
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "lllllllqw.jsdoc",
+  ]
+}
