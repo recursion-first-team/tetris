@@ -2,12 +2,10 @@ name: Release to GitHub Pages on Tags
 
 run-name: Release ${{ github.ref_name }} to GitHub Pages by @${{ github.actor }}
 
-# on:
-#   create:
-#     tags:
-#       - "v*"
-
-on: push
+on:
+  create:
+    tags:
+      - "v\d{1,}\.\d{1,}\.\d{1,}"
 
 permissions:
   contents: read
