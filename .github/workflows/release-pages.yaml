@@ -1,0 +1,35 @@
+name: Release to GitHub Pages on Tag
+
+run-name: Release ${{ github.ref_name }} to GitHub Pages by @${{ github.actor }}
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  relase:
+    name: Rlease to GitHub Pages
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.release.outputs.page_url }}
+    steps:
+    - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Reploy to GitHub Pages 🚀
+        id: release
+        uses: actions/deploy-pages@v2
+        with:
+          folder: ./src/
+          branch: main
