@@ -7,7 +7,7 @@ run-name: Release ${{ github.ref_name }} to GitHub Pages by @${{ github.actor }}
 #     tags:
 #       - "v*"
 
-on: workflow_dispatch
+on: push
 
 permissions:
   contents: read
