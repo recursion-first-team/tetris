@@ -33,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "./src/"
       - name: Release to GitHub Pages 🚀
         id: release
         uses: actions/deploy-pages@v2
