@@ -2,10 +2,12 @@ name: Release to GitHub Pages on Tag
 
 run-name: Release ${{ github.ref_name }} to GitHub Pages by @${{ github.actor }}
 
-on:
-  push:
-    tags:
-      - "v*"
+# on:
+#   create:
+#     tags:
+#       - "v*"
+
+on: workflow_dispatch
 
 permissions:
   contents: read
