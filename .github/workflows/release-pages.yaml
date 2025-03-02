@@ -1,4 +1,4 @@
-name: Release to GitHub Pages on Tag
+name: Release to GitHub Pages on Tags
 
 run-name: Release ${{ github.ref_name }} to GitHub Pages by @${{ github.actor }}
 
