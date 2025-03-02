@@ -1,9 +1,9 @@
 :root {
-  --bg: #1b1b1b;
-  --primary: #ffffff;
-  --on-primary: #ffffff;
-  --primary-container: #d0e4ff;
-  --seconddary-container: #ffffff;
+  --bg: #202020;
+  --primary: #e0e0e0;
+  --on-primary: #e0e0e0;
+  --primary-container: #e0e0e0;
+  --seconddary-container: rgb(200, 200, 200, 0.4);
 }
 
 body {
@@ -11,6 +11,10 @@ body {
   align-items: center;
   height: 100vh;
   background-color: var(--bg);
+  background-image: url(../assets/tetris.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  overflow: hidden;
 }
 
 .container {
