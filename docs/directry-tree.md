@@ -6,6 +6,7 @@
 ├─ .vscode
 ├─ docs
 └─ src
+   ├─ assets
    ├─ html
    ├─ style
    └─ js
@@ -15,6 +16,7 @@
 .vscode：Visual Studio Codeに関するファイルを格納する
 docs：ドキュメントに関するファイルを格納する
 src：テトリスに関するソースコードを格納する
+assets: 画像や音声などのデータを配置する
 html：HTMLファイルを格納する
 style：CSSファイルを格納する
 js：JavaScriptファイルを格納する
